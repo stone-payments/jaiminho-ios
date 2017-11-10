@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F70FC221FB63AB500193E06 /* Jaiminho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F70FC181FB63AB500193E06 /* Jaiminho.framework */; };
-		9F70FC271FB63AB500193E06 /* JaiminhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC261FB63AB500193E06 /* JaiminhoTests.swift */; };
 		9F70FC291FB63AB500193E06 /* Jaiminho.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F70FC1B1FB63AB500193E06 /* Jaiminho.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC341FB63ACA00193E06 /* Encodable.swift */; };
+		9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC351FB63ACA00193E06 /* URL.swift */; };
+		9F70FC401FB63ACA00193E06 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC371FB63ACA00193E06 /* APIClient.swift */; };
+		9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC381FB63ACA00193E06 /* APIError.swift */; };
+		9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC391FB63ACA00193E06 /* APIRequest.swift */; };
+		9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */; };
+		9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */; };
+		9F70FC451FB63ACA00193E06 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3C1FB63ACA00193E06 /* Result.swift */; };
+		9F70FC461FB63ACA00193E06 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3D1FB63ACA00193E06 /* URLQueryEncoder.swift */; };
+		9F70FC4E1FB63AD700193E06 /* PomboAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */; };
+		9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */; };
+		9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */; };
+		9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */; };
+		9F70FC641FB6405200193E06 /* Jaiminho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F70FC181FB63AB500193E06 /* Jaiminho.framework */; };
+		9F70FC6A1FB6422E00193E06 /* PomboAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC531FB63B9700193E06 /* PomboAPIClientTests.swift */; };
+		9F70FC6B1FB6423100193E06 /* JaiminhoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC261FB63AB500193E06 /* JaiminhoTests.swift */; };
+		9F70FC6C1FB6423400193E06 /* PomboEmailRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC571FB63C3600193E06 /* PomboEmailRequestTests.swift */; };
+		9F70FC6D1FB6423600193E06 /* PomboEmailRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC561FB63C3500193E06 /* PomboEmailRequestMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9F70FC231FB63AB500193E06 /* PBXContainerItemProxy */ = {
+		9F70FC651FB6405200193E06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F70FC0F1FB63AB500193E06 /* Project object */;
 			proxyType = 1;
@@ -26,9 +42,25 @@
 		9F70FC181FB63AB500193E06 /* Jaiminho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jaiminho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F70FC1B1FB63AB500193E06 /* Jaiminho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jaiminho.h; sourceTree = "<group>"; };
 		9F70FC1C1FB63AB500193E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F70FC211FB63AB500193E06 /* JaiminhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaiminhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F70FC261FB63AB500193E06 /* JaiminhoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JaiminhoTests.swift; sourceTree = "<group>"; };
 		9F70FC281FB63AB500193E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F70FC341FB63ACA00193E06 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		9F70FC351FB63ACA00193E06 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		9F70FC371FB63ACA00193E06 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9F70FC381FB63ACA00193E06 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		9F70FC391FB63ACA00193E06 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
+		9F70FC3C1FB63ACA00193E06 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		9F70FC3D1FB63ACA00193E06 /* URLQueryEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryEncoder.swift; sourceTree = "<group>"; };
+		9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboAPIClient.swift; sourceTree = "<group>"; };
+		9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailRequest.swift; sourceTree = "<group>"; };
+		9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailResponse.swift; sourceTree = "<group>"; };
+		9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboErrorResponse.swift; sourceTree = "<group>"; };
+		9F70FC531FB63B9700193E06 /* PomboAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboAPIClientTests.swift; sourceTree = "<group>"; };
+		9F70FC561FB63C3500193E06 /* PomboEmailRequestMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailRequestMock.swift; sourceTree = "<group>"; };
+		9F70FC571FB63C3600193E06 /* PomboEmailRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailRequestTests.swift; sourceTree = "<group>"; };
+		9F70FC5F1FB6405200193E06 /* JaiminhoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JaiminhoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +71,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F70FC1E1FB63AB500193E06 /* Frameworks */ = {
+		9F70FC5C1FB6405200193E06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F70FC221FB63AB500193E06 /* Jaiminho.framework in Frameworks */,
+				9F70FC641FB6405200193E06 /* Jaiminho.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9F70FC181FB63AB500193E06 /* Jaiminho.framework */,
-				9F70FC211FB63AB500193E06 /* JaiminhoTests.xctest */,
+				9F70FC5F1FB6405200193E06 /* JaiminhoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +103,8 @@
 		9F70FC1A1FB63AB500193E06 /* Jaiminho */ = {
 			isa = PBXGroup;
 			children = (
+				9F70FC471FB63AD700193E06 /* Pombo */,
+				9F70FC321FB63ACA00193E06 /* Commons */,
 				9F70FC1B1FB63AB500193E06 /* Jaiminho.h */,
 				9F70FC1C1FB63AB500193E06 /* Info.plist */,
 			);
@@ -80,10 +114,96 @@
 		9F70FC251FB63AB500193E06 /* JaiminhoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F70FC521FB63B6600193E06 /* Pombo */,
 				9F70FC261FB63AB500193E06 /* JaiminhoTests.swift */,
 				9F70FC281FB63AB500193E06 /* Info.plist */,
 			);
 			path = JaiminhoTests;
+			sourceTree = "<group>";
+		};
+		9F70FC321FB63ACA00193E06 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC331FB63ACA00193E06 /* Extensions */,
+				9F70FC361FB63ACA00193E06 /* Network */,
+				9F70FC3D1FB63ACA00193E06 /* URLQueryEncoder.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		9F70FC331FB63ACA00193E06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC341FB63ACA00193E06 /* Encodable.swift */,
+				9F70FC351FB63ACA00193E06 /* URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F70FC361FB63ACA00193E06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC371FB63ACA00193E06 /* APIClient.swift */,
+				9F70FC381FB63ACA00193E06 /* APIError.swift */,
+				9F70FC391FB63ACA00193E06 /* APIRequest.swift */,
+				9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */,
+				9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */,
+				9F70FC3C1FB63ACA00193E06 /* Result.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9F70FC471FB63AD700193E06 /* Pombo */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */,
+				9F70FC491FB63AD700193E06 /* Requests */,
+				9F70FC4B1FB63AD700193E06 /* Responses */,
+			);
+			path = Pombo;
+			sourceTree = "<group>";
+		};
+		9F70FC491FB63AD700193E06 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9F70FC4B1FB63AD700193E06 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */,
+				9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		9F70FC521FB63B6600193E06 /* Pombo */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC551FB63C1E00193E06 /* Requests */,
+				9F70FC5A1FB63CA100193E06 /* Responses */,
+				9F70FC531FB63B9700193E06 /* PomboAPIClientTests.swift */,
+			);
+			path = Pombo;
+			sourceTree = "<group>";
+		};
+		9F70FC551FB63C1E00193E06 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9F70FC561FB63C3500193E06 /* PomboEmailRequestMock.swift */,
+				9F70FC571FB63C3600193E06 /* PomboEmailRequestTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9F70FC5A1FB63CA100193E06 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,22 +238,22 @@
 			productReference = 9F70FC181FB63AB500193E06 /* Jaiminho.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F70FC201FB63AB500193E06 /* JaiminhoTests */ = {
+		9F70FC5E1FB6405200193E06 /* JaiminhoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F70FC2F1FB63AB500193E06 /* Build configuration list for PBXNativeTarget "JaiminhoTests" */;
+			buildConfigurationList = 9F70FC671FB6405200193E06 /* Build configuration list for PBXNativeTarget "JaiminhoTests" */;
 			buildPhases = (
-				9F70FC1D1FB63AB500193E06 /* Sources */,
-				9F70FC1E1FB63AB500193E06 /* Frameworks */,
-				9F70FC1F1FB63AB500193E06 /* Resources */,
+				9F70FC5B1FB6405200193E06 /* Sources */,
+				9F70FC5C1FB6405200193E06 /* Frameworks */,
+				9F70FC5D1FB6405200193E06 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9F70FC241FB63AB500193E06 /* PBXTargetDependency */,
+				9F70FC661FB6405200193E06 /* PBXTargetDependency */,
 			);
 			name = JaiminhoTests;
 			productName = JaiminhoTests;
-			productReference = 9F70FC211FB63AB500193E06 /* JaiminhoTests.xctest */;
+			productReference = 9F70FC5F1FB6405200193E06 /* JaiminhoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +270,7 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
-					9F70FC201FB63AB500193E06 = {
+					9F70FC5E1FB6405200193E06 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -169,7 +289,7 @@
 			projectRoot = "";
 			targets = (
 				9F70FC171FB63AB500193E06 /* Jaiminho */,
-				9F70FC201FB63AB500193E06 /* JaiminhoTests */,
+				9F70FC5E1FB6405200193E06 /* JaiminhoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F70FC1F1FB63AB500193E06 /* Resources */ = {
+		9F70FC5D1FB6405200193E06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,24 +316,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */,
+				9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */,
+				9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */,
+				9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */,
+				9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */,
+				9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */,
+				9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */,
+				9F70FC401FB63ACA00193E06 /* APIClient.swift in Sources */,
+				9F70FC451FB63ACA00193E06 /* Result.swift in Sources */,
+				9F70FC461FB63ACA00193E06 /* URLQueryEncoder.swift in Sources */,
+				9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */,
+				9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */,
+				9F70FC4E1FB63AD700193E06 /* PomboAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F70FC1D1FB63AB500193E06 /* Sources */ = {
+		9F70FC5B1FB6405200193E06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F70FC271FB63AB500193E06 /* JaiminhoTests.swift in Sources */,
+				9F70FC6B1FB6423100193E06 /* JaiminhoTests.swift in Sources */,
+				9F70FC6C1FB6423400193E06 /* PomboEmailRequestTests.swift in Sources */,
+				9F70FC6D1FB6423600193E06 /* PomboEmailRequestMock.swift in Sources */,
+				9F70FC6A1FB6422E00193E06 /* PomboAPIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9F70FC241FB63AB500193E06 /* PBXTargetDependency */ = {
+		9F70FC661FB6405200193E06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F70FC171FB63AB500193E06 /* Jaiminho */;
-			targetProxy = 9F70FC231FB63AB500193E06 /* PBXContainerItemProxy */;
+			targetProxy = 9F70FC651FB6405200193E06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -373,7 +509,7 @@
 			};
 			name = Release;
 		};
-		9F70FC301FB63AB500193E06 /* Debug */ = {
+		9F70FC681FB6405200193E06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -387,7 +523,7 @@
 			};
 			name = Debug;
 		};
-		9F70FC311FB63AB500193E06 /* Release */ = {
+		9F70FC691FB6405200193E06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -422,11 +558,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F70FC2F1FB63AB500193E06 /* Build configuration list for PBXNativeTarget "JaiminhoTests" */ = {
+		9F70FC671FB6405200193E06 /* Build configuration list for PBXNativeTarget "JaiminhoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F70FC301FB63AB500193E06 /* Debug */,
-				9F70FC311FB63AB500193E06 /* Release */,
+				9F70FC681FB6405200193E06 /* Debug */,
+				9F70FC691FB6405200193E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

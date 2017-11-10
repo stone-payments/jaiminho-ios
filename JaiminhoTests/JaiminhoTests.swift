@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Jaiminho
 
 class JaiminhoTests: XCTestCase {
     
