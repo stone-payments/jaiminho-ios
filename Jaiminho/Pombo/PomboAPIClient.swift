@@ -9,14 +9,19 @@
 import Foundation
 
 class PomboAPIClient: APIClient {
+
+    var apiToken: String
+    internal var session = URLSession(configuration: .default)
+    internal var dataTask: URLSessionDataTask?
+    internal var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
+    internal var headers: [String:String]
     
-    var session = URLSession(configuration: .default)
-    var dataTask: URLSessionDataTask?
-    var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
-    var headers = ["Accept":"application/json",
-                           "Content-Type":"application/json",
-                           "Authorization":"Shared t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD"]
-    
+    init(apiToken: String) {
+        self.apiToken = apiToken
+        headers = ["Accept":"application/json",
+                   "Content-Type":"application/json",
+                   "Authorization":"Shared \(apiToken)"]
+    }
     
     func send<T: APIRequest>(_ request: T, method: HTTPMethod, completion: @escaping ResultCallback<T.Response>) {
         do {

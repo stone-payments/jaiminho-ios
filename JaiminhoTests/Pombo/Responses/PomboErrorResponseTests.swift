@@ -44,8 +44,11 @@ class PomboErrorResponseTests: XCTestCase {
             let email = try decoder.decode(PomboErrorResponse.self, from: responseData)
             XCTAssertNil(email)
         }
+        catch DecodingError.dataCorrupted {
+            assert(true)
+        }
         catch {
-            XCTFail("Failled. Deserializing should not work with incorrect JSON.")
+            XCTFail("Failled. Deserializing should not work with incorrect JSON. \(error)")
         }
     }
 }

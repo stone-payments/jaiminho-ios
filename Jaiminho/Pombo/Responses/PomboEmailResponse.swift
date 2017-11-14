@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PomboEmailResponse: Decodable {
+struct PomboEmailResponse: Decodable {
 
     var trackId: String
     var success: Bool

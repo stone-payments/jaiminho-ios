@@ -24,14 +24,24 @@ class PomboEmailRequestMock {
         let dic: [String : Any] = [
             "company":"Stone",
             "costCenter":"1234",
-            "messages":[
-                ["body":"Message",
-                 "to":[["subscriberKey":"123456",
-                        "address":"jvieira@stone.com.br"]],
-                 "subject":"Subject",
-                 "sendStructure":1,
-                 "from":["address":"noreply@stone.com.br",
-                         "name":"Stone"]]]]
+            "messages": [
+                [
+                    "body":"Message",
+                    "to": [
+                        [
+                            "subscriberKey":"123456",
+                            "address":"jvieira@stone.com.br"
+                        ]
+                    ],
+                    "subject":"Subject",
+                    "sendStructure":1,
+                    "from": [
+                        "address":"noreply@stone.com.br",
+                        "name":"Stone"
+                    ]
+                ]
+            ]
+        ]
         do {
             return try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
         } catch {

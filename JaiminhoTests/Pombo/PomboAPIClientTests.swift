@@ -22,23 +22,34 @@ class PomboAPIClientTests: XCTestCase {
     }
     
     func testSendEmail() {
-                
         let expect = expectation(description: "Pass")
 
-        let pomboClient = PomboAPIClient()
-        pomboClient.send(PomboEmailRequestMock.object, method: .get) { response in
+        let pomboClient = PomboAPIClient(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
+        pomboClient.send(PomboEmailRequestMock.object, method: .post) { response in
             switch response {
-            case .success(let pomboResponse):
-                print("  Title: \(pomboResponse.message)")
+            case .success(_):
                 expect.fulfill()
                 assert(true)
             case .failure(let error):
                 XCTFail("Sending email error: \(error)")
             }
         }
-        
         waitForExpectations(timeout: 60, handler: nil)
     }
 
-    
+    func testGetJob() {
+        let expect = expectation(description: "Pass")
+        
+        let pomboClient = PomboAPIClient(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
+        pomboClient.send(PomboJobRequest(trackId: "NWI4NGFlZTktMDBhYi00MTVhLWEwNWMtNDk5NjA0OTFjMzc1"), method: .get) { response in
+            switch response {
+            case .success(_):
+                expect.fulfill()
+                assert(true)
+            case .failure(let error):
+                XCTFail("Sending email error: \(error)")
+            }
+        }
+        waitForExpectations(timeout: 60, handler: nil)
+    }
 }

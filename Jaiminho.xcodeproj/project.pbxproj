@@ -28,6 +28,10 @@
 		9F70FC711FB66B6600193E06 /* PomboEmailResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC701FB66B6600193E06 /* PomboEmailResponseMock.swift */; };
 		9F70FC741FB66F1400193E06 /* PomboErrorResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */; };
 		9F70FC761FB66F5600193E06 /* PomboErrorResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */; };
+		9FE74DEF1FBB55C500B535E0 /* PomboJobRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */; };
+		9FE74DF11FBB583700B535E0 /* PomboJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */; };
+		9FE74DF31FBB5C8300B535E0 /* PomboJobResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */; };
+		9FE74DF51FBB5D1700B535E0 /* PomboJobResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF41FBB5D1700B535E0 /* PomboJobResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		9F70FC701FB66B6600193E06 /* PomboEmailResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboEmailResponseMock.swift; sourceTree = "<group>"; };
 		9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseTests.swift; sourceTree = "<group>"; };
 		9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseMock.swift; sourceTree = "<group>"; };
+		9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobRequest.swift; sourceTree = "<group>"; };
+		9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponse.swift; sourceTree = "<group>"; };
+		9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseMock.swift; sourceTree = "<group>"; };
+		9FE74DF41FBB5D1700B535E0 /* PomboJobResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */,
+				9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -176,8 +185,9 @@
 		9F70FC4B1FB63AD700193E06 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
-				9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */,
 				9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */,
+				9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */,
+				9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -204,8 +214,9 @@
 		9F70FC5A1FB63CA100193E06 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
-				9F70FC6E1FB66A5400193E06 /* PomboEmailResponseTests.swift */,
 				9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */,
+				9F70FC6E1FB66A5400193E06 /* PomboEmailResponseTests.swift */,
+				9FE74DF41FBB5D1700B535E0 /* PomboJobResponseTests.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -213,9 +224,10 @@
 		9F70FC721FB66B9400193E06 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */,
 				9F70FC561FB63C3500193E06 /* PomboEmailRequestMock.swift */,
 				9F70FC701FB66B6600193E06 /* PomboEmailResponseMock.swift */,
-				9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */,
+				9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -330,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE74DEF1FBB55C500B535E0 /* PomboJobRequest.swift in Sources */,
 				9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */,
 				9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */,
 				9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */,
@@ -337,6 +350,7 @@
 				9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */,
 				9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */,
 				9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */,
+				9FE74DF11FBB583700B535E0 /* PomboJobResponse.swift in Sources */,
 				9F70FC401FB63ACA00193E06 /* APIClient.swift in Sources */,
 				9F70FC451FB63ACA00193E06 /* Result.swift in Sources */,
 				9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */,
@@ -354,7 +368,9 @@
 				9F70FC6D1FB6423600193E06 /* PomboEmailRequestMock.swift in Sources */,
 				9F70FC6A1FB6422E00193E06 /* PomboAPIClientTests.swift in Sources */,
 				9F70FC6F1FB66A5400193E06 /* PomboEmailResponseTests.swift in Sources */,
+				9FE74DF51FBB5D1700B535E0 /* PomboJobResponseTests.swift in Sources */,
 				9F70FC711FB66B6600193E06 /* PomboEmailResponseMock.swift in Sources */,
+				9FE74DF31FBB5C8300B535E0 /* PomboJobResponseMock.swift in Sources */,
 				9F70FC761FB66F5600193E06 /* PomboErrorResponseMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

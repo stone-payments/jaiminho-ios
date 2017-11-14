@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PomboErrorResponse: Decodable {
+struct PomboErrorResponse: Decodable {
 
     var errors: [String]
     var message: String
