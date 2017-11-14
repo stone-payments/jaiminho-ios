@@ -10,9 +10,8 @@ import UIKit
 
 class PomboEmailResponse: Decodable {
 
-    var trackId: String?
+    var trackId: String
     var success: Bool
     var message: String
-    var errors: [String]?
 
 }

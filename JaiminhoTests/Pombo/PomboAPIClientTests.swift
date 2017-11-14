@@ -26,7 +26,7 @@ class PomboAPIClientTests: XCTestCase {
         let expect = expectation(description: "Pass")
 
         let pomboClient = PomboAPIClient()
-        pomboClient.send(PomboEmailRequestMock.emailObject, method: .post) { response in
+        pomboClient.send(PomboEmailRequestMock.object, method: .get) { response in
             switch response {
             case .success(let pomboResponse):
                 print("  Title: \(pomboResponse.message)")

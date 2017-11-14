@@ -30,7 +30,7 @@ class PomboEmailRequestTests: XCTestCase {
     func testSerilaizeJSON() {
         let encoder = JSONEncoder()
         do {
-            let emailData = try encoder.encode(PomboEmailRequestMock.emailObject)
+            let emailData = try encoder.encode(PomboEmailRequestMock.object)
             
             let json = try JSONSerialization.jsonObject(with: emailData, options: [])
             

@@ -11,7 +11,7 @@ import UIKit
 
 class PomboEmailRequestMock {
 
-    class var emailObject: PomboEmailRequest {
+    class var object: PomboEmailRequest {
         let recipient = Contact(address: "jvieira@stone.com.br", subscriberKey: "123456")
         let sender = Contact(name: "Stone", address: "noreply@stone.com.br")
         
@@ -20,7 +20,7 @@ class PomboEmailRequestMock {
         return PomboEmailRequest(company: "Stone", costCenter: "1234", messages: [message])
     }
     
-    class var emailJSON: Data {
+    class var json: Data {
         let dic: [String : Any] = [
             "company":"Stone",
             "costCenter":"1234",
