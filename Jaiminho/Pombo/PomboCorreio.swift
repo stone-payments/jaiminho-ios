@@ -8,9 +8,9 @@
 
 import Foundation
 
-class PomboAPIClient: APIClient {
+public class PomboCorreio: NSObject, APIClient {
 
-    var apiToken: String
+    private var apiToken: String
     internal var session = URLSession(configuration: .default)
     internal var dataTask: URLSessionDataTask?
     internal var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"

@@ -8,10 +8,14 @@
 
 import UIKit
 
-struct PomboErrorResponse: Decodable {
-
+class PomboErrorResponse: NSObject, Decodable {
     var errors: [String]
     var message: String
     var success: Bool
     
+    init(errors: [String], message: String, success: Bool) {
+        self.errors = errors
+        self.message = message
+        self.success = success
+    }
 }

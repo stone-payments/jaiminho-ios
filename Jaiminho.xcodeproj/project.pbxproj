@@ -16,7 +16,7 @@
 		9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */; };
 		9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */; };
 		9F70FC451FB63ACA00193E06 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3C1FB63ACA00193E06 /* Result.swift */; };
-		9F70FC4E1FB63AD700193E06 /* PomboAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */; };
+		9F70FC4E1FB63AD700193E06 /* PomboCorreio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC481FB63AD700193E06 /* PomboCorreio.swift */; };
 		9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */; };
 		9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */; };
 		9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */; };
@@ -32,6 +32,8 @@
 		9FE74DF11FBB583700B535E0 /* PomboJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */; };
 		9FE74DF31FBB5C8300B535E0 /* PomboJobResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */; };
 		9FE74DF51FBB5D1700B535E0 /* PomboJobResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF41FBB5D1700B535E0 /* PomboJobResponseTests.swift */; };
+		9FE74DFA1FBB8E3100B535E0 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF91FBB8E3100B535E0 /* Email.swift */; };
+		9FE74DFD1FBF61A000B535E0 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DFC1FBF61A000B535E0 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,7 @@
 		9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
 		9F70FC3C1FB63ACA00193E06 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboAPIClient.swift; sourceTree = "<group>"; };
+		9F70FC481FB63AD700193E06 /* PomboCorreio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboCorreio.swift; sourceTree = "<group>"; };
 		9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailRequest.swift; sourceTree = "<group>"; };
 		9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailResponse.swift; sourceTree = "<group>"; };
 		9F70FC4D1FB63AD700193E06 /* PomboErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboErrorResponse.swift; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponse.swift; sourceTree = "<group>"; };
 		9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseMock.swift; sourceTree = "<group>"; };
 		9FE74DF41FBB5D1700B535E0 /* PomboJobResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseTests.swift; sourceTree = "<group>"; };
+		9FE74DF91FBB8E3100B535E0 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		9FE74DFC1FBF61A000B535E0 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		9F70FC1A1FB63AB500193E06 /* Jaiminho */ = {
 			isa = PBXGroup;
 			children = (
+				9FE74DFB1FBF617B00B535E0 /* Entities */,
 				9F70FC471FB63AD700193E06 /* Pombo */,
 				9F70FC321FB63ACA00193E06 /* Commons */,
 				9F70FC1B1FB63AB500193E06 /* Jaiminho.h */,
@@ -166,7 +171,7 @@
 		9F70FC471FB63AD700193E06 /* Pombo */ = {
 			isa = PBXGroup;
 			children = (
-				9F70FC481FB63AD700193E06 /* PomboAPIClient.swift */,
+				9F70FC481FB63AD700193E06 /* PomboCorreio.swift */,
 				9F70FC491FB63AD700193E06 /* Requests */,
 				9F70FC4B1FB63AD700193E06 /* Responses */,
 			);
@@ -230,6 +235,15 @@
 				9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9FE74DFB1FBF617B00B535E0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9FE74DF91FBB8E3100B535E0 /* Email.swift */,
+				9FE74DFC1FBF61A000B535E0 /* Contact.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +360,9 @@
 				9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */,
 				9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */,
 				9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */,
+				9FE74DFD1FBF61A000B535E0 /* Contact.swift in Sources */,
 				9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */,
+				9FE74DFA1FBB8E3100B535E0 /* Email.swift in Sources */,
 				9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */,
 				9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */,
 				9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */,
@@ -355,7 +371,7 @@
 				9F70FC451FB63ACA00193E06 /* Result.swift in Sources */,
 				9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */,
 				9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */,
-				9F70FC4E1FB63AD700193E06 /* PomboAPIClient.swift in Sources */,
+				9F70FC4E1FB63AD700193E06 /* PomboCorreio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

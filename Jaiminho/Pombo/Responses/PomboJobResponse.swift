@@ -22,12 +22,17 @@ enum JobNotificationType: String, Decodable {
     case sms = "Sms"
 }
 
-struct PomboJobResponse: Decodable {
+class PomboJobResponse: NSObject, Decodable {
     var content: JobObject
     var success: Bool
+    
+    init(content: JobObject, success: Bool) {
+        self.content = content
+        self.success = success
+    }
 }
 
-struct JobObject: Decodable {
+class JobObject: NSObject, Decodable {
     var identifier: String
     var company: String
     var status: JobStatus
@@ -46,21 +51,19 @@ struct JobObject: Decodable {
         return Date(timeIntervalSince1970: lastUpdatedAt/1000)
     }
     
-//    enum CodingKeys: String, CodingKey {
-//        case identifier,company,status,message,messageId,notificationType,subtasks,startAt,lastUpdatedAt,tokenId
-//    }
-//    
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        identifier = try values.decode(String.self, forKey: .identifier)
-//        company = try values.decode(String.self, forKey: .identifier)
-//        status = try values.decode(JobStatus.self, forKey: .status)
-//        message = try values.decode(String.self, forKey: .message)
-//        messageId = try values.decode(String.self, forKey: .messageId)
-//        notificationType = try values.decode(JobNotificationType.self, forKey: .notificationType)
-//        subtasks = try values.decode([JobObject].self, forKey: .subtasks)
-//        startAt = try values.decode(Double.self, forKey: .startAt)
-//        lastUpdatedAt = try values.decode(Double.self, forKey: .lastUpdatedAt)
-//        tokenId = try values.decode(String.self, forKey: .tokenId)
-//    }
+    init(identifier: String, company: String, status: JobStatus, message: String,
+         messageId: String, notificationType: JobNotificationType,
+         subtasks: [JobObject], startAt: Double, lastUpdatedAt: Double, tokenId: String) {
+        self.identifier = identifier
+        self.company = company
+        self.status = status
+        self.message = message
+        self.messageId = messageId
+        self.notificationType = notificationType
+        self.subtasks = subtasks
+        self.startAt = startAt
+        self.lastUpdatedAt = lastUpdatedAt
+        self.tokenId = tokenId
+    }
 }
+

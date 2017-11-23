@@ -24,7 +24,7 @@ class PomboAPIClientTests: XCTestCase {
     func testSendEmail() {
         let expect = expectation(description: "Pass")
 
-        let pomboClient = PomboAPIClient(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
+        let pomboClient = PomboCorreio(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
         pomboClient.send(PomboEmailRequestMock.object, method: .post) { response in
             switch response {
             case .success(_):
@@ -40,7 +40,7 @@ class PomboAPIClientTests: XCTestCase {
     func testGetJob() {
         let expect = expectation(description: "Pass")
         
-        let pomboClient = PomboAPIClient(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
+        let pomboClient = PomboCorreio(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
         pomboClient.send(PomboJobRequest(trackId: "NWI4NGFlZTktMDBhYi00MTVhLWEwNWMtNDk5NjA0OTFjMzc1"), method: .get) { response in
             switch response {
             case .success(_):

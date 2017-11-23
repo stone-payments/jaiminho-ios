@@ -12,10 +12,10 @@ import UIKit
 class PomboEmailRequestMock {
 
     class var object: PomboEmailRequest {
-        let recipient = Contact(address: "jvieira@stone.com.br", subscriberKey: "123456")
-        let sender = Contact(name: "Stone", address: "noreply@stone.com.br")
+        let recipient = PomboContact(address: "jvieira@stone.com.br", subscriberKey: "123456")
+        let sender = PomboContact(name: "Stone", address: "noreply@stone.com.br")
         
-        let message = Message(from: sender, to: [recipient], sendStructure: .commercial, subject: "Subject", body: "Message")
+        let message = PomboMessage(from: sender, to: [recipient], sendStructure: .commercial, subject: "Subject", body: "Message")
         
         return PomboEmailRequest(company: "Stone", costCenter: "1234", messages: [message])
     }

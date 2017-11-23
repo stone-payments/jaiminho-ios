@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct PomboEmailRequest: APIRequest {
+class PomboEmailRequest: NSObject, APIRequest {
     
     public typealias Response = PomboEmailResponse
     
@@ -18,34 +18,47 @@ struct PomboEmailRequest: APIRequest {
     
     var company: String
     var costCenter: String
-    var messages: [Message]
+    var messages: [PomboMessage]
 
-    init(company: String, costCenter: String, messages: [Message]) {
+    internal init(company: String, costCenter: String, messages: [PomboMessage]) {
         self.company = company
         self.costCenter = costCenter
         self.messages = messages
     }
+    
+    init(email: Email, company: String, costCenter: String, structure: PomboMessage.Structure) {
+        self.company = company
+        self.costCenter = costCenter
+        
+        var recipients = [PomboContact]()
+        for recipient in email.to {
+            recipients.append(PomboContact(address: recipient.address, subscriberKey: recipient.address))
+        }
+        let sender = PomboContact(name: email.from.name, address: email.from.address)
+        self.messages = [PomboMessage(from: sender, to: recipients, sendStructure: structure, subject: email.subject, body: email.body)]
+    }
 }
 
-struct Message: Encodable {
+class PomboMessage: NSObject, Encodable {
     
+    @objc
     enum Structure: Int, Codable {
         case commercial = 1
         case transactional = 2
     }
     
-    var from: Contact
-    var to: [Contact]
+    var from: PomboContact
+    var to: [PomboContact]
     var sendStructure: Structure?
     var subject: String?
     var body: String?
     
-    var cc: [Contact]?
-    var bcc: [Contact]?
+    var cc: [PomboContact]?
+    var bcc: [PomboContact]?
     var templateId: String?
     var sendAt: Date?
     
-    init(from: Contact, to: [Contact], sendStructure: Structure, subject: String, body: String) {
+    init(from: PomboContact, to: [PomboContact], sendStructure: Structure, subject: String, body: String) {
         self.from = from
         self.to = to
         self.sendStructure = sendStructure
@@ -54,13 +67,13 @@ struct Message: Encodable {
     }
 }
 
-struct Contact: Encodable {
+class PomboContact: NSObject, Encodable {
     
     var name: String?
     var address: String
     var subscriberKey: String?
     
-    init(name: String, address: String) {
+    init(name: String?, address: String) {
         self.name = name
         self.address = address
     }

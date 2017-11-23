@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct PomboJobRequest: APIRequest {
+class PomboJobRequest: NSObject, APIRequest {
 
     public typealias Response = PomboJobResponse
     
