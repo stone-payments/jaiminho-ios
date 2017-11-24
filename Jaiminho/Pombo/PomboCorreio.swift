@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class PomboCorreio: NSObject, APIClient {
+public class PomboCorreio: APIClient {
 
     private var apiToken: String
     internal var session = URLSession(configuration: .default)
@@ -16,14 +16,14 @@ public class PomboCorreio: NSObject, APIClient {
     internal var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
     internal var headers: [String:String]
     
-    init(apiToken: String) {
+    public init(apiToken: String) {
         self.apiToken = apiToken
         headers = ["Accept":"application/json",
                    "Content-Type":"application/json",
                    "Authorization":"Shared \(apiToken)"]
     }
     
-    func send<T: APIRequest>(_ request: T, method: HTTPMethod, completion: @escaping ResultCallback<T.Response>) {
+    public func send<T: APIRequest>(_ request: T, method: HTTPMethod, completion: @escaping ResultCallback<T.Response>) {
         do {
             let urlRequest = try method.urlRequest(urlString: baseUrl, request: request, headers: headers)
             dataTask = session.dataTask(with: urlRequest) { data, response, error in

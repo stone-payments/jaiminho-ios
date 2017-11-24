@@ -11,7 +11,7 @@ import Foundation
 /// All requests must conform to this protocol
 /// - Must conform to Encodable too, so that all stored public parameters
 ///   of types conforming this protocol will be encoded as parameters.
-protocol APIRequest: Encodable {
+public protocol APIRequest: Encodable {
     /// Response (will be wrapped with a DataContainer)
     associatedtype Response: Decodable
     

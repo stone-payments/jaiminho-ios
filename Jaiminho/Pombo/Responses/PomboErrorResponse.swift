@@ -9,9 +9,9 @@
 import UIKit
 
 class PomboErrorResponse: NSObject, Decodable {
-    var errors: [String]
-    var message: String
-    var success: Bool
+    public var errors: [String]
+    public var message: String
+    public var success: Bool
     
     init(errors: [String], message: String, success: Bool) {
         self.errors = errors

@@ -8,12 +8,12 @@
 
 import UIKit
 
-@objc public class Contact: NSObject {
-    @objc public var address: String
-    @objc public var name: String?
+public struct Contact {
+    public var address: String
+    public var name: String?
     
     
-    @objc public init(address: String, name: String?) {
+    public init(address: String, name: String? = nil) {
         self.address = address
         self.name = name
     }

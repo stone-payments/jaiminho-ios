@@ -8,10 +8,10 @@
 
 import UIKit
 
-class PomboEmailResponse: NSObject, Decodable {
-    var trackId: String
-    var success: Bool
-    var message: String
+public struct PomboEmailResponse: Decodable {
+    public var trackId: String
+    public var success: Bool
+    public var message: String
 
     init(trackId: String, success: Bool, message: String) {
         self.trackId = trackId

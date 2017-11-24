@@ -8,15 +8,15 @@
 
 import UIKit
 
-@objc public class Email: NSObject {
-    var from: Contact
-    var to: [Contact]
-    var cc: [Contact]?
-    var bcc: [Contact]?
-    var body: String
-    var subject: String
+public struct Email {
+    public var from: Contact
+    public var to: [Contact]
+    public var cc: [Contact]?
+    public var bcc: [Contact]?
+    public var body: String
+    public var subject: String
     
-    init(from: Contact, to: [Contact], cc: [Contact]?, bcc: [Contact]?, body: String, subject: String) {
+    public init(from: Contact, to: [Contact], cc: [Contact]? = nil, bcc: [Contact]? = nil, body: String, subject: String) {
         self.from = from
         self.to = to
         self.cc = cc

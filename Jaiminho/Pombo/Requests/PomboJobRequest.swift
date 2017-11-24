@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PomboJobRequest: NSObject, APIRequest {
+public struct PomboJobRequest: APIRequest {
 
     public typealias Response = PomboJobResponse
     
@@ -19,7 +19,7 @@ class PomboJobRequest: NSObject, APIRequest {
     // Parameters
     private let trackId: String
     
-    init(trackId: String) {
+    public init(trackId: String) {
         self.trackId = trackId
     }
 }

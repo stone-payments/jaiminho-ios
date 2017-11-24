@@ -8,7 +8,12 @@
 
 import UIKit
 
-class PomboEmailRequest: NSObject, APIRequest {
+public enum Structure: Int, Codable {
+    case commercial = 1
+    case transactional = 2
+}
+
+public struct PomboEmailRequest: APIRequest {
     
     public typealias Response = PomboEmailResponse
     
@@ -26,7 +31,7 @@ class PomboEmailRequest: NSObject, APIRequest {
         self.messages = messages
     }
     
-    init(email: Email, company: String, costCenter: String, structure: PomboMessage.Structure) {
+    public init(email: Email, company: String, costCenter: String, structure: Structure) {
         self.company = company
         self.costCenter = costCenter
         
@@ -39,14 +44,7 @@ class PomboEmailRequest: NSObject, APIRequest {
     }
 }
 
-class PomboMessage: NSObject, Encodable {
-    
-    @objc
-    enum Structure: Int, Codable {
-        case commercial = 1
-        case transactional = 2
-    }
-    
+struct PomboMessage: Encodable {
     var from: PomboContact
     var to: [PomboContact]
     var sendStructure: Structure?
@@ -67,7 +65,7 @@ class PomboMessage: NSObject, Encodable {
     }
 }
 
-class PomboContact: NSObject, Encodable {
+struct PomboContact: Encodable {
     
     var name: String?
     var address: String

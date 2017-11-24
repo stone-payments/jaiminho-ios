@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum JobStatus: String, Decodable {
+public enum JobStatus: String, Decodable {
     case running = "Running"
     case degraded = "Degraded"
     case failed = "Failed"
@@ -16,15 +16,15 @@ enum JobStatus: String, Decodable {
     case duplicated = "Duplicated"
 }
 
-enum JobNotificationType: String, Decodable {
+public enum JobNotificationType: String, Decodable {
     case email = "Email"
     case push = "Push"
     case sms = "Sms"
 }
 
-class PomboJobResponse: NSObject, Decodable {
-    var content: JobObject
-    var success: Bool
+public struct PomboJobResponse: Decodable {
+    public var content: JobObject
+    public var success: Bool
     
     init(content: JobObject, success: Bool) {
         self.content = content
@@ -32,38 +32,23 @@ class PomboJobResponse: NSObject, Decodable {
     }
 }
 
-class JobObject: NSObject, Decodable {
-    var identifier: String
-    var company: String
-    var status: JobStatus
-    var message: String
-    var messageId: String
-    var notificationType: JobNotificationType
-    var subtasks: [JobObject]
+public struct JobObject: Decodable {
+    public var identifier: String
+    public var company: String
+    public var status: JobStatus
+    public var message: String
+    public var messageId: String
+    public var notificationType: JobNotificationType
+    public var subtasks: [JobObject]
     var startAt: Double
     var lastUpdatedAt: Double
-    var tokenId: String
+    public var tokenId: String
     
-    var startAtDate: Date {
+    public var startAtDate: Date {
         return Date(timeIntervalSince1970: startAt/1000)
     }
-    var lastUpdatedAtDate: Date {
+    public var lastUpdatedAtDate: Date {
         return Date(timeIntervalSince1970: lastUpdatedAt/1000)
-    }
-    
-    init(identifier: String, company: String, status: JobStatus, message: String,
-         messageId: String, notificationType: JobNotificationType,
-         subtasks: [JobObject], startAt: Double, lastUpdatedAt: Double, tokenId: String) {
-        self.identifier = identifier
-        self.company = company
-        self.status = status
-        self.message = message
-        self.messageId = messageId
-        self.notificationType = notificationType
-        self.subtasks = subtasks
-        self.startAt = startAt
-        self.lastUpdatedAt = lastUpdatedAt
-        self.tokenId = tokenId
     }
 }
 
