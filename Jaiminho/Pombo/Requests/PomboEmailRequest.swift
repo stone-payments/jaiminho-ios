@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Packer
 
 public enum Structure: Int, Codable {
     case commercial = 1

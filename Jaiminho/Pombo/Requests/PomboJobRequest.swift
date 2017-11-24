@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Packer
 
 public struct PomboJobRequest: APIRequest {
 

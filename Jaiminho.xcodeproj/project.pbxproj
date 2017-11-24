@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F70FC291FB63AB500193E06 /* Jaiminho.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F70FC1B1FB63AB500193E06 /* Jaiminho.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC341FB63ACA00193E06 /* Encodable.swift */; };
-		9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC351FB63ACA00193E06 /* URL.swift */; };
-		9F70FC401FB63ACA00193E06 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC371FB63ACA00193E06 /* APIClient.swift */; };
-		9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC381FB63ACA00193E06 /* APIError.swift */; };
-		9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC391FB63ACA00193E06 /* APIRequest.swift */; };
-		9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */; };
-		9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */; };
-		9F70FC451FB63ACA00193E06 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC3C1FB63ACA00193E06 /* Result.swift */; };
 		9F70FC4E1FB63AD700193E06 /* PomboCorreio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC481FB63AD700193E06 /* PomboCorreio.swift */; };
 		9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */; };
 		9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */; };
@@ -28,6 +20,7 @@
 		9F70FC711FB66B6600193E06 /* PomboEmailResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC701FB66B6600193E06 /* PomboEmailResponseMock.swift */; };
 		9F70FC741FB66F1400193E06 /* PomboErrorResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */; };
 		9F70FC761FB66F5600193E06 /* PomboErrorResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */; };
+		9FDF7F5A1FC8D1230005F695 /* Packer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDF7F591FC8D1230005F695 /* Packer.framework */; };
 		9FE74DEF1FBB55C500B535E0 /* PomboJobRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */; };
 		9FE74DF11FBB583700B535E0 /* PomboJobResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */; };
 		9FE74DF31FBB5C8300B535E0 /* PomboJobResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */; };
@@ -51,14 +44,6 @@
 		9F70FC1B1FB63AB500193E06 /* Jaiminho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jaiminho.h; sourceTree = "<group>"; };
 		9F70FC1C1FB63AB500193E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F70FC281FB63AB500193E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F70FC341FB63ACA00193E06 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		9F70FC351FB63ACA00193E06 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		9F70FC371FB63ACA00193E06 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		9F70FC381FB63ACA00193E06 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		9F70FC391FB63ACA00193E06 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
-		9F70FC3C1FB63ACA00193E06 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9F70FC481FB63AD700193E06 /* PomboCorreio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboCorreio.swift; sourceTree = "<group>"; };
 		9F70FC4A1FB63AD700193E06 /* PomboEmailRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailRequest.swift; sourceTree = "<group>"; };
 		9F70FC4C1FB63AD700193E06 /* PomboEmailResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomboEmailResponse.swift; sourceTree = "<group>"; };
@@ -71,6 +56,7 @@
 		9F70FC701FB66B6600193E06 /* PomboEmailResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboEmailResponseMock.swift; sourceTree = "<group>"; };
 		9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseTests.swift; sourceTree = "<group>"; };
 		9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseMock.swift; sourceTree = "<group>"; };
+		9FDF7F591FC8D1230005F695 /* Packer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Packer.framework; sourceTree = "<group>"; };
 		9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobRequest.swift; sourceTree = "<group>"; };
 		9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponse.swift; sourceTree = "<group>"; };
 		9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseMock.swift; sourceTree = "<group>"; };
@@ -84,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDF7F5A1FC8D1230005F695 /* Packer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +88,11 @@
 		9F70FC0E1FB63AB500193E06 = {
 			isa = PBXGroup;
 			children = (
+				9FDF7F4D1FC8CE370005F695 /* Vendors */,
 				9F70FC1A1FB63AB500193E06 /* Jaiminho */,
 				9F70FC251FB63AB500193E06 /* JaiminhoTests */,
 				9F70FC191FB63AB500193E06 /* Products */,
+				9FDF7F561FC8CFC00005F695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,7 +110,6 @@
 			children = (
 				9FE74DFB1FBF617B00B535E0 /* Entities */,
 				9F70FC471FB63AD700193E06 /* Pombo */,
-				9F70FC321FB63ACA00193E06 /* Commons */,
 				9F70FC1B1FB63AB500193E06 /* Jaiminho.h */,
 				9F70FC1C1FB63AB500193E06 /* Info.plist */,
 			);
@@ -135,37 +123,6 @@
 				9F70FC281FB63AB500193E06 /* Info.plist */,
 			);
 			path = JaiminhoTests;
-			sourceTree = "<group>";
-		};
-		9F70FC321FB63ACA00193E06 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-				9F70FC331FB63ACA00193E06 /* Extensions */,
-				9F70FC361FB63ACA00193E06 /* Network */,
-			);
-			path = Commons;
-			sourceTree = "<group>";
-		};
-		9F70FC331FB63ACA00193E06 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9F70FC341FB63ACA00193E06 /* Encodable.swift */,
-				9F70FC351FB63ACA00193E06 /* URL.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9F70FC361FB63ACA00193E06 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				9F70FC371FB63ACA00193E06 /* APIClient.swift */,
-				9F70FC381FB63ACA00193E06 /* APIError.swift */,
-				9F70FC391FB63ACA00193E06 /* APIRequest.swift */,
-				9F70FC3A1FB63ACA00193E06 /* HTTPMethod.swift */,
-				9F70FC3B1FB63ACA00193E06 /* HTTPParameter.swift */,
-				9F70FC3C1FB63ACA00193E06 /* Result.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		9F70FC471FB63AD700193E06 /* Pombo */ = {
@@ -235,6 +192,21 @@
 				9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9FDF7F4D1FC8CE370005F695 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9FDF7F591FC8D1230005F695 /* Packer.framework */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		9FDF7F561FC8CFC00005F695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9FE74DFB1FBF617B00B535E0 /* Entities */ = {
@@ -357,20 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE74DEF1FBB55C500B535E0 /* PomboJobRequest.swift in Sources */,
-				9F70FC3E1FB63ACA00193E06 /* Encodable.swift in Sources */,
-				9F70FC411FB63ACA00193E06 /* APIError.swift in Sources */,
 				9F70FC511FB63AD700193E06 /* PomboErrorResponse.swift in Sources */,
 				9FE74DFD1FBF61A000B535E0 /* Contact.swift in Sources */,
-				9F70FC431FB63ACA00193E06 /* HTTPMethod.swift in Sources */,
 				9FE74DFA1FBB8E3100B535E0 /* Email.swift in Sources */,
 				9F70FC501FB63AD700193E06 /* PomboEmailResponse.swift in Sources */,
-				9F70FC3F1FB63ACA00193E06 /* URL.swift in Sources */,
-				9F70FC421FB63ACA00193E06 /* APIRequest.swift in Sources */,
 				9FE74DF11FBB583700B535E0 /* PomboJobResponse.swift in Sources */,
-				9F70FC401FB63ACA00193E06 /* APIClient.swift in Sources */,
-				9F70FC451FB63ACA00193E06 /* Result.swift in Sources */,
 				9F70FC4F1FB63AD700193E06 /* PomboEmailRequest.swift in Sources */,
-				9F70FC441FB63ACA00193E06 /* HTTPParameter.swift in Sources */,
 				9F70FC4E1FB63AD700193E06 /* PomboCorreio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +536,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q54VRJ624;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors",
+				);
 				INFOPLIST_FILE = JaiminhoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.stone.JaiminhoTests;
@@ -586,6 +554,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q54VRJ624;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors",
+				);
 				INFOPLIST_FILE = JaiminhoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.stone.JaiminhoTests;

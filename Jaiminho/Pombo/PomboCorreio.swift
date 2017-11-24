@@ -7,14 +7,15 @@
 //
 
 import Foundation
+import Packer
 
 public class PomboCorreio: APIClient {
 
     private var apiToken: String
-    internal var session = URLSession(configuration: .default)
-    internal var dataTask: URLSessionDataTask?
-    internal var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
-    internal var headers: [String:String]
+    public var session = URLSession(configuration: .default)
+    public var dataTask: URLSessionDataTask?
+    public var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
+    public var headers: [String:String]
     
     public init(apiToken: String) {
         self.apiToken = apiToken

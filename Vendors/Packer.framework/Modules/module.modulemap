@@ -1,0 +1,11 @@
+framework module Packer {
+  umbrella header "Packer.h"
+
+  export *
+  module * { export * }
+}
+
+module Packer.Swift {
+    header "Packer-Swift.h"
+    requires objc
+}
