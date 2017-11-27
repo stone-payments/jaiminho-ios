@@ -8,9 +8,13 @@
 
 import UIKit
 
-class PomboErrorResponse: NSObject, Decodable {
+public struct PomboErrorResponse: Decodable {
+    
+    /// Error list.
     public var errors: [String]
+    /// Message from API.
     public var message: String
+    /// Response success.
     public var success: Bool
     
     init(errors: [String], message: String, success: Bool) {

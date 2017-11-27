@@ -9,8 +9,11 @@
 import UIKit
 
 public struct PomboEmailResponse: Decodable {
+    /// Track ID to check the email status.
     public var trackId: String
+    /// Response success.
     public var success: Bool
+    /// API message.
     public var message: String
 
     init(trackId: String, success: Bool, message: String) {

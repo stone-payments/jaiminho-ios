@@ -9,6 +9,7 @@
 import Foundation
 import Packer
 
+/// The API client for the Pombo Correio API
 public class PomboCorreio: APIClient {
 
     private var apiToken: String
@@ -24,6 +25,12 @@ public class PomboCorreio: APIClient {
                    "Authorization":"Shared \(apiToken)"]
     }
     
+    /// Method responsible for sending the Pombo Correio API requests
+    ///
+    /// - Parameters:
+    ///   - request: The request struct to be sent
+    ///   - method: HTTP method to send the request
+    ///   - completion: Result can be .failure or .success. The failure will contain the PomboErrorResponse and the success will have the reponse conresponding to the request.
     public func send<T: APIRequest>(_ request: T, method: HTTPMethod, completion: @escaping ResultCallback<T.Response>) {
         do {
             let urlRequest = try method.urlRequest(urlString: baseUrl, request: request, headers: headers)

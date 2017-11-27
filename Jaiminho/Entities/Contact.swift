@@ -9,9 +9,10 @@
 import UIKit
 
 public struct Contact {
+    /// Email address.
     public var address: String
+    /// Contact name.
     public var name: String?
-    
     
     public init(address: String, name: String? = nil) {
         self.address = address

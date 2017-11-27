@@ -17,7 +17,6 @@ public struct PomboJobRequest: APIRequest {
         return "jobs/\(trackId)"
     }
     
-    // Parameters
     private let trackId: String
     
     public init(trackId: String) {
