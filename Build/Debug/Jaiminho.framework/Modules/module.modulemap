@@ -1,0 +1,11 @@
+framework module Jaiminho {
+  umbrella header "Jaiminho.h"
+
+  export *
+  module * { export * }
+}
+
+module Jaiminho.Swift {
+    header "Jaiminho-Swift.h"
+    requires objc
+}
