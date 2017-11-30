@@ -15,8 +15,17 @@ public class PomboCorreio: APIClient {
     private var apiToken: String
     public var session = URLSession(configuration: .default)
     public var dataTask: URLSessionDataTask?
-    public var baseUrl = "https://pombo-correio-api.stone.com.br/v1/"
-    public var headers: [String:String]
+    public var headers: [String:String]?
+
+    public var baseUrl: String {
+        switch Configuration.environment {
+        case .develop:
+            return "http://pombo-correio-api-dev.paas.dev.dc2.buy4.io/v1/"
+        case .production:
+            return "https://pombo-correio-api.stone.com.br/v1/"
+        }
+    }
+    
     
     public init(apiToken: String) {
         self.apiToken = apiToken

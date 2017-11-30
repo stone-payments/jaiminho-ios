@@ -34,6 +34,21 @@ done
 ```
 ## Usando
 
+#### Configuração de hambiente
+
+Se precisar rodar o PomboCorreio em ambiente de teste pode ser usada a propriedade `environment` da classe `Configure` que recebe um enum `Environment`, podendo ser `.develop` ou `.production`.
+
+> Por padrão o ambiente de produção já estará selecionado.
+
+```swift
+// para ambiente de desenvolvimento
+Configuration.environment = .develop
+
+// para ambiente de produção
+Configuration.environment = .production
+```
+
+
 #### Envio de email
 
 Para enviar uma mensagem de email é necessario criar uma instancia de `Email` e usá-lo para criar uma instancia do `PomboEmailRequest`.

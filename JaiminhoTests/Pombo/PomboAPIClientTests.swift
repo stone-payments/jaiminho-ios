@@ -13,7 +13,8 @@ class PomboAPIClientTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        Configuration.environment = .develop
     }
     
     override func tearDown() {
@@ -24,7 +25,7 @@ class PomboAPIClientTests: XCTestCase {
     func testSendEmail() {
         let expect = expectation(description: "Pass")
 
-        let pomboClient = PomboCorreio(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
+        let pomboClient = PomboCorreio(apiToken: "some-token")
         pomboClient.send(PomboEmailRequestMock.object, method: .post) { response in
             switch response {
             case .success(_):
@@ -40,8 +41,8 @@ class PomboAPIClientTests: XCTestCase {
     func testGetJob() {
         let expect = expectation(description: "Pass")
         
-        let pomboClient = PomboCorreio(apiToken: "t2NAXxmDB6SjeLEvCgdAwNe2c7l9FD")
-        pomboClient.send(PomboJobRequest(trackId: "NWI4NGFlZTktMDBhYi00MTVhLWEwNWMtNDk5NjA0OTFjMzc1"), method: .get) { response in
+        let pomboClient = PomboCorreio(apiToken: "some-token")
+        pomboClient.send(PomboJobRequest(trackId: "OTEzZmI4MTYtMWI4MS00NzcyLTliNDctNzI4YmZkYjE5NTYz"), method: .get) { response in
             switch response {
             case .success(_):
                 expect.fulfill()
