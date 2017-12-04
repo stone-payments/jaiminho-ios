@@ -4,34 +4,10 @@ Jaiminho é um facilitador para consumir a API de envio de email do [Pombo Corre
 
 ## Instalação
 
-#### Instalação manual
-Para instalar manualmente a SDK é necessário baixar o arquivo [Jaiminho_Manual.framework.zip](https://github.com/stone-payments/jaiminho-ios/releases) e colocar os arquivos `Jaiminho.framework` e `Packer.framework` em Embedded Binaries como na imagem abaixo:
+#### Carthage
+github "stone-payments/packer"
+github "stone-payments/jaiminho-ios"
 
-![embedded](https://user-images.githubusercontent.com/2567823/33395917-21ed1ab2-d52e-11e7-8b6c-602116f0e954.png)
-
-Em `Build Phases` clique para adicionar um `Run Script`...
-
-![script](https://user-images.githubusercontent.com/2567823/33395965-4870dd72-d52e-11e7-958e-eb7af04a7be1.png)
-
-E cole o script abaixo:
-
-```bash
-FRAMEWORKS=("Jaiminho" "Packer")
-for FRAMEWORK in $FRAMEWORKS
-do
-FRAMEWORK_EXECUTABLE_PATH="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/$FRAMEWORK.framework/$FRAMEWORK"
-EXTRACTED_ARCHS=()
-for ARCH in $ARCHS
-do
-lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
-EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
-done
-lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
-rm "${EXTRACTED_ARCHS[@]}"
-rm "$FRAMEWORK_EXECUTABLE_PATH"
-mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
-done
-```
 ## Usando
 
 #### Configuração de hambiente

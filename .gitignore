@@ -7,12 +7,7 @@ Jaiminho.xcodeproj/xcuserdata/
 Jaiminho.xcworkspace/xcuserdata/
 
 # Ignore Carthage build
-/Carthage/*
-!/Carthage/Build/
-/Carthage/Build/*
-!/Carthage/Build/iOS
-/Carthage/Build/iOS/*.dSYM
-/Carthage/Build/iOS/*.bcsymbolmap
+/Carthage
 
 # Ignore build
 /Build

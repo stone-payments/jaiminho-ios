@@ -11,6 +11,8 @@ import XCTest
 
 class PomboAPIClientTests: XCTestCase {
     
+    var trackId: String = "OTEzZmI4MTYtMWI4MS00NzcyLTliNDctNzI4YmZkYjE5NTYz"
+    
     override func setUp() {
         super.setUp()
         
@@ -28,7 +30,8 @@ class PomboAPIClientTests: XCTestCase {
         let pomboClient = PomboCorreio(apiToken: "some-token")
         pomboClient.send(PomboEmailRequestMock.object, method: .post) { response in
             switch response {
-            case .success(_):
+            case .success(let response):
+                self.trackId = response.trackId
                 expect.fulfill()
                 assert(true)
             case .failure(let error):
@@ -42,7 +45,7 @@ class PomboAPIClientTests: XCTestCase {
         let expect = expectation(description: "Pass")
         
         let pomboClient = PomboCorreio(apiToken: "some-token")
-        pomboClient.send(PomboJobRequest(trackId: "OTEzZmI4MTYtMWI4MS00NzcyLTliNDctNzI4YmZkYjE5NTYz"), method: .get) { response in
+        pomboClient.send(PomboJobRequest(trackId: trackId), method: .get) { response in
             switch response {
             case .success(_):
                 expect.fulfill()
