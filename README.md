@@ -5,7 +5,7 @@ Jaiminho é um facilitador para consumir a API de envio de email do [Pombo Corre
 ## Instalação
 
 #### Instalação manual
-Para instalar manualmente a SDK é necessário baixar o arquivo [Jaiminho_Manual.framework.zip](https://github.com/stone-payments/jaiminho-ios/releases) e colocar os arquivos `Jaiminho.framework` e `Packer.framework` em Embedded Binaries como na imagem abaixo:
+Para instalar manualmente a SDK é necessário baixar o arquivo [Jaiminho_Manual.zip](https://github.com/stone-payments/jaiminho-ios/releases) e colocar os arquivos `Jaiminho.framework` e `Packer.framework` em Embedded Binaries como na imagem abaixo:
 
 ![embedded](https://user-images.githubusercontent.com/2567823/33395917-21ed1ab2-d52e-11e7-8b6c-602116f0e954.png)
 

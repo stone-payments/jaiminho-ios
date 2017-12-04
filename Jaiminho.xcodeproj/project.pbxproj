@@ -58,7 +58,7 @@
 		9F70FC731FB66F1300193E06 /* PomboErrorResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseTests.swift; sourceTree = "<group>"; };
 		9F70FC751FB66F5600193E06 /* PomboErrorResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboErrorResponseMock.swift; sourceTree = "<group>"; };
 		9FA5FAB01FD0797F00EF5927 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		9FA5FAB61FD07D3600EF5927 /* Packer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Packer.framework; sourceTree = "<group>"; };
+		9FA5FAB61FD07D3600EF5927 /* Packer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Packer.framework; path = Carthage/Build/iOS/Packer.framework; sourceTree = "<group>"; };
 		9FE74DEE1FBB55C500B535E0 /* PomboJobRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobRequest.swift; sourceTree = "<group>"; };
 		9FE74DF01FBB583700B535E0 /* PomboJobResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponse.swift; sourceTree = "<group>"; };
 		9FE74DF21FBB5C8300B535E0 /* PomboJobResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomboJobResponseMock.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				9F70FC141FB63AB500193E06 /* Frameworks */,
 				9F70FC151FB63AB500193E06 /* Headers */,
 				9F70FC161FB63AB500193E06 /* Resources */,
-				9FA5FAA21FCDF76900EF5927 /* ShellScript */,
+				9FA5FAA21FCDF76900EF5927 /* Run Script - Carthage */,
 			);
 			buildRules = (
 			);
@@ -328,18 +328,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FA5FAA21FCDF76900EF5927 /* ShellScript */ = {
+		9FA5FAA21FCDF76900EF5927 /* Run Script - Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Packer.framework",
 			);
+			name = "Run Script - Carthage";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"${SRCROOT}/Scripts/build_universal.sh\"";
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -520,7 +522,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = Jaiminho/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -548,7 +550,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = Jaiminho/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
