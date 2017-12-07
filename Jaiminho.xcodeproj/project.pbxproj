@@ -341,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "bash \"${SRCROOT}/Scripts/carthage_debug_only.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
